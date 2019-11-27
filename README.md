@@ -1,24 +1,22 @@
-# README
+## Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, we’ll be working to implement authentication systems so users can only access areas of a site they are authorized to.
 
-Things you may want to cover:
+## Tecnologies
 
-* Ruby version
+* Ruby
+* Ruby on Rails
 
-* System dependencies
+## Steps to install the app
 
-* Configuration
+* Clone the GitHub project
+* Open the project folder
+* Run bundle install and then bundle update
+* Run the rails db:migrate
+* Run the rails server
+* Start testing the forms
 
-* Database creation
+## Authors
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* <a href="https://github.com/rmauritsson"> Github: Leonard Rwai Kanyesigye</a>
+* <a href="https://github.com/SofiBretz">Github: Sofia Barrantes</a>
