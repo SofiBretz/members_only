@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
-  before_action :signed_in_user, only: [:new, :create]
+  before_action :signed_in_user, only: %i[new create]
 
   def index
-   @posts = Post.all
+    @posts = Post.all
   end
 
   def new
@@ -17,9 +19,7 @@ class PostsController < ApplicationController
   end
 
   def signed_in_user
-    unless signed_in?
-      redirect_to signin_url
-    end
+    redirect_to signin_url unless signed_in?
   end
 
   private
