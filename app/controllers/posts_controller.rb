@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
-  before_action :signed_in_user, only: %i[new create]
+  before_action :signed_in_user, only: [:new, :create]
 
   def index
     @posts = Post.all
@@ -15,7 +15,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     @post.save
-    redirect_to root_path
+    redirect_to root_url
   end
 
   def signed_in_user
