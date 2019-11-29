@@ -14,7 +14,7 @@ In this project, we’ll be working to implement authentication systems so users
 * Run bundle install and then bundle update
 * Run the rails db:migrate
 * Run the rails server
-* Start testing the forms
+* Start testing 
 
 ## Authors
 
